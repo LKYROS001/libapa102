@@ -1,4 +1,5 @@
 #include <apa102.h>
+#include <wiringPi.h>
 
 int main() {
   struct APA102* strip = APA102_Init(60);
