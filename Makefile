@@ -34,3 +34,9 @@ examples/stripesanim: examples/stripesanim.c
 
 examples/multistripesanim: examples/multistripesanim.c
 	gcc -L. -I./lib  -o examples/multistripesanim examples/multistripesanim.c -lwiringPi -lapa102 -lpthread
+
+examples/preview: examples/preview.c
+	gcc -L. -I./lib  -o examples/preview examples/preview.c -lwiringPi -lapa102 -lpthread
+	
+examples/final: examples/final.c
+	gcc -L. -I./lib  -o examples/final examples/final.c -lwiringPi -lapa102 -lpthread
