@@ -9,7 +9,7 @@ int main() {
   int x;
   int z;
   for(x = 0; x < 10000000; x++) {
-    int z++;
+    z++;
     if (z==360){
       printf("YESSS \n");
       z=0;
