@@ -1,6 +1,6 @@
 #include <apa102.h>
 #include <wiringPi.h>
-#include<iostream>
+#include <stdio.h>
 
 int main() {
   struct APA102* strip = APA102_Init(60);
@@ -8,7 +8,7 @@ int main() {
   struct APA102_Frame* color2 = APA102_CreateFrame(1, 0, 255, 255);
   int x;
   for(x = 0; x < 10000000; x++) {
-    cout<<x;
+    printf("%d", x);
     APA102_Begin();
     int i;
     for(i = 0; i < 30; i++) {
