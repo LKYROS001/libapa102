@@ -11,18 +11,16 @@ int main() {
     printf("%d", x);
     APA102_Begin();
     int i;
-    for(i = 0; i < 30; i++) {
+    for(i = 0; i < 60; i++) {
       APA102_WriteLED(color);
-      APA102_WriteLED(color2);
     }
     APA102_End();
     delay(1);
     
     APA102_Begin();
     int j;
-    for(j = 0; j < 30; j++) {
+    for(j = 0; j < 60; j++) {
       APA102_WriteLED(color2);
-      APA102_WriteLED(color);
     }
     APA102_End();
     delay(1);
