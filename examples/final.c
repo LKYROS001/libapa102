@@ -21,7 +21,7 @@ int main() {
       APA102_WriteLED(color2);
     }
     APA102_End();
-    delay(1000)
+    delay(1000);
   }
   return 0;
 }
