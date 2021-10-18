@@ -6,7 +6,7 @@ int main() {
   struct APA102_Frame* color = APA102_CreateFrame(10, 255, 255, 0);
   struct APA102_Frame* color2 = APA102_CreateFrame(31, 0, 255, 255);
   int x;
-  for(x = 0; x < 1000; i++) {
+  for(x = 0; x < 1000; x++) {
     APA102_Begin();
     int i;
     for(i = 0; i < 60; i++) {
