@@ -12,18 +12,18 @@ int main() {
   //Create the colors array (must be NULL-terminated)
   struct APA102_Frame* colors[5];
 
-  colors[0] = APA102_CreateFrame(31, 0xFF, 0x0, 0x0);
-  colors[1] = APA102_CreateFrame(31, 0xFF, 0xFF, 0x0);
-  colors[2] = APA102_CreateFrame(31, 0x00, 0xFF, 0x0);
-  colors[3] = APA102_CreateFrame(31, 0x00, 0xFF, 0xFF);
+  colors[0] = APA102_CreateFrame(1, 0xFF, 0x0, 0x0);
+  colors[1] = APA102_CreateFrame(1, 0xFF, 0xFF, 0x0);
+  colors[2] = APA102_CreateFrame(1, 0x00, 0xFF, 0x0);
+  colors[3] = APA102_CreateFrame(1, 0x00, 0xFF, 0xFF);
   colors[4] = 0;
 
   struct APA102_Frame* colors2[5];
 
-  colors2[0] = APA102_CreateFrame(31, 0xFF, 0xFF, 0x0);
-  colors2[1] = APA102_CreateFrame(31, 0xFF, 0x0, 0x0);
-  colors2[2] = APA102_CreateFrame(31, 0x00, 0x0, 0x0);
-  colors2[3] = APA102_CreateFrame(31, 0xFF, 0xFF, 0xFF);
+  colors2[0] = APA102_CreateFrame(1, 0xFF, 0xFF, 0x0);
+  colors2[1] = APA102_CreateFrame(1, 0xFF, 0x0, 0x0);
+  colors2[2] = APA102_CreateFrame(1, 0x00, 0x0, 0x0);
+  colors2[3] = APA102_CreateFrame(1, 0xFF, 0xFF, 0xFF);
   colors2[4] = 0;
   
   //Fill strip
