@@ -3,6 +3,7 @@
 */
 
 #include <apa102.h>
+#include <stdio.h>
 
 int main() {
   //Initialize strip
@@ -17,6 +18,24 @@ int main() {
   colors[3] = APA102_CreateFrame(31, 0x00, 0xFF, 0xFF);
   colors[4] = 0;
 
+  struct APA102_Frame* colors2[5];
+
+  colors2[0] = APA102_CreateFrame(31, 0xFF, 0xFF, 0x0);
+  colors2[1] = APA102_CreateFrame(31, 0xFF, 0x0, 0x0);
+  colors2[2] = APA102_CreateFrame(31, 0x00, 0x0, 0x0);
+  colors2[3] = APA102_CreateFrame(31, 0xFF, 0xFF, 0xFF);
+  colors2[4] = 0;
+  
   //Fill strip
-  APA102_MultiStripes(strip, colors, 4, 2, 0, 0);
+  int x;
+  int z=0;
+  for(x = 0; x < 10000000; x++) {
+    z++;
+    if (z==360){
+      printf("YESSS \n");
+      z=0;
+    }
+    APA102_MultiStripes(strip, colors, 4, 2, 0, 0);
+    APA102_MultiStripes(strip, colors2, 4, 2, 0, 0);
+  }
 }
