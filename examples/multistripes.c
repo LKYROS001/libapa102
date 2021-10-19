@@ -11,7 +11,7 @@ int main() {
 
   //Create the colors array (must be NULL-terminated)
   struct APA102_Frame* colors[60];
-  y int;
+  int y;
   for(y=0; y<29;y++){
     colors[y] = APA102_CreateFrame(1, 255, 255, 0);
     colors[y+1] = APA102_CreateFrame(1, 0, 255, 255);
