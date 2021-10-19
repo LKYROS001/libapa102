@@ -35,7 +35,7 @@ int main() {
       printf("YESSS \n");
       z=0;
     }
-    APA102_MultiStripes(strip, colors, 4, 2, 0, 0);
+    APA102_MultiStripes(strip, colors,  60, 0, 0, 0);
     //APA102_MultiStripes(strip, colors2, 4, 2, 0, 0);
   }
 }
