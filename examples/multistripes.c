@@ -31,7 +31,7 @@ int main() {
   int z=0;
   for(x = 0; x < 10000000; x++) {
     z++;
-    if (z==180){
+    if (z==90){
       printf("YESSS \n");
       z=0;
     }
