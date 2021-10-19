@@ -14,8 +14,12 @@ int main() {
   int y;
   for(y=0; y<29;y++){
     colors[y] = APA102_CreateFrame(1, 255, 255, 0);
-    colors[y+1] = APA102_CreateFrame(1, 0, 255, 255);
+    colors[y+30] = APA102_CreateFrame(1, 0, 255, 255);
   }
+  colors[58] = APA102_CreateFrame(1, 255, 255, 0);
+  colors[59] = APA102_CreateFrame(1, 255, 255, 0);
+  colors[60] = 0;
+  
   struct APA102_Frame* colors2[5];
 
   colors2[0] = APA102_CreateFrame(1, 0xFF, 0xFF, 0x0);
